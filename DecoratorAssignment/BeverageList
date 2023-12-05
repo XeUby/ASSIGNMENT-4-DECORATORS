@@ -1,0 +1,103 @@
+// DarkRoast Beverage
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DecoratorAssignment.BeveragesList
+{
+    // DarkRoast class, a concrete beverage component
+    public class DarkRoast : Beverage
+    {
+        // Constructor sets the description for DarkRoast Coffee
+        public DarkRoast()
+        {
+            description = "Dark Roast Coffee";
+        }
+
+        // Override the Cost method to return the cost of DarkRoast Coffee
+        public override decimal Cost()
+        {
+            return 0.99M;
+        }
+    }
+}
+
+// Decaf Beverage
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DecoratorAssignment.BeveragesList
+{
+    // Decaf class, a concrete beverage component
+    public class Decaf : Beverage
+    {
+        // Constructor sets the description for Decaf Coffee
+        public Decaf()
+        {
+            description = "Decaf Coffee";
+        }
+
+        // Override the Cost method to return the cost of Decaf Coffee
+        public override decimal Cost()
+        {
+            return 1.05M;
+        }
+    }
+}
+
+// Espresso Beverage
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DecoratorAssignment.BeveragesList
+{
+    // Espresso class, a concrete beverage component
+    public class Espresso : Beverage
+    {
+        // Constructor sets the description for Espresso
+        public Espresso()
+        {
+            description = "Espresso";
+        }
+
+        // Override the Cost method to return the cost of Espresso
+        public override decimal Cost()
+        {
+            return 1.99M;
+        }
+    }
+}
+
+// HouseBlend Beverage
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DecoratorAssignment.BeveragesList
+{
+    // HouseBlend class, a concrete beverage component
+    public class HouseBlend : Beverage
+    {
+        // Constructor sets the description for House Blend Coffee
+        public HouseBlend()
+        {
+            description = "House Blend Coffee";
+        }
+
+        // Override the Cost method to return the cost of House Blend Coffee
+        public override decimal Cost()
+        {
+            return 0.89M;
+        }
+    }
+}
